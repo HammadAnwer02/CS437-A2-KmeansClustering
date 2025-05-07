@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# K-Means Clustering Visualization
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive web application that demonstrates the K-Means clustering algorithm through a visual and step-by-step process. This project helps users understand how the K-Means algorithm works by showing the movement of centroids and cluster assignments in real-time.
 
-## Available Scripts
+![K-Means Visualization](https://via.placeholder.com/800x400?text=K-Means+Visualization)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Interactive visualization of the K-Means clustering algorithm
+- Step-by-step iteration display
+- Real-time centroid movement tracking
+- Detailed distance calculations between points and centroids
+- Auto-play functionality to watch the algorithm converge
+- Responsive design that works on both desktop and mobile devices
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Before you begin, ensure you have the following installed:
+- Node.js (v14.0.0 or higher)
+- npm (v6.0.0 or higher)
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/kmeans-visualization.git
+cd kmeans-visualization
+```
 
-### `npm run build`
+2. Install dependencies:
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The application will open in your default browser at `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+1. **Initial State**: The application starts with predefined data points and initial centroids.
+2. **Navigation**:
+   - Use the "Previous" and "Next" buttons to move through iterations
+   - Click "Auto Play" to watch the algorithm converge automatically
+   - Use "Show Distances" to view the distance calculations between points and centroids
+3. **Visualization**:
+   - Data points are shown as circles with their IDs
+   - Centroids are shown as larger circles with "C1", "C2", etc.
+   - Colors indicate cluster assignments
+   - Grid lines help in understanding the coordinate system
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technical Details
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The visualization uses:
+- React for the user interface
+- SVG for rendering the visualization
+- Tailwind CSS for styling
+- Pre-computed iterations for accurate demonstration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+kmeans-visualization/
+├── src/
+│   ├── App.jsx              # Main application component
+│   ├── App.css              # Global styles
+│   └── KMeansVisualization.jsx  # Core visualization component
+├── public/
+│   └── index.html          # HTML template
+├── package.json            # Project dependencies and scripts
+└── README.md              # Project documentation
+```
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Acknowledgments
 
-### Analyzing the Bundle Size
+- The K-Means algorithm implementation is based on standard clustering techniques
+- Special thanks to the React and Tailwind CSS communities for their excellent documentation and tools
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contact
 
-### Making a Progressive Web App
+Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [https://github.com/yourusername/kmeans-visualization](https://github.com/yourusername/kmeans-visualization)
